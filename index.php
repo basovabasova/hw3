@@ -36,11 +36,11 @@
 
     foreach ($crazy as $value) {
         $first_word = explode(' ', $value);
-        foreach ($continents as $key => $animals) {
-            foreach ($animals as $animal) {
-                $first_word_1 = explode(' ', $animal);
+        foreach ($continents as $contenent_key => $world) {
+            foreach ($world as $animals) {
+                $first_word_1 = explode(' ', $animals);
                 if ($first_word[0] === $first_word_1[0]) {
-                    $crazy_world[$key][] = $value;
+                    $crazy_world[$contenent_key][] = $value;
                 }
             }
         }
