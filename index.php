@@ -15,8 +15,8 @@
     $crazy_world =[];
     $arr_animals = [];
     
-    foreach ($continents as $key => $world) {
-        $continent[] = $key;
+    foreach ($continents as $contenent_key => $world) {
+        $continent[] = $contenent_key;
         foreach ($world as $key => $animals) {
             $a = str_word_count($animals);
             if ($a === 2) {            
